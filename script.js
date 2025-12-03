@@ -8,6 +8,13 @@
 // ==/UserScript==
 
 (function () {
+    // Get the current date
+    const today = new Date();
+
+
+    if (today.getDate() !== 3 || today.getMonth() !== 11 || today.getFullYear() !== 2025) {
+        return;
+    }
 
     const inject = () => {
 
@@ -97,3 +104,4 @@
     script.remove();
 
 })();
+
